@@ -1,7 +1,7 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
-    kotlin("kapt") version "1.9.23"
+    kotlin("kapt") version "1.9.0"
 
 }
 

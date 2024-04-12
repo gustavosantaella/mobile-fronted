@@ -3,6 +3,7 @@ package  com.softlink.wafi.src.navigation.main
 import android.annotation.SuppressLint
 import android.util.Log
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.DateRange
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Menu
 import androidx.compose.material.icons.outlined.Person
@@ -48,7 +49,7 @@ fun Nav(){
             selected =  selectedIndex == 3,
             onClick = { /*TODO*/ },
             icon = {
-                Icon(imageVector =  Icons.Outlined.Person, contentDescription = null)
+                Icon(imageVector =  Icons.Outlined.DateRange, contentDescription = null)
             }
         )
 

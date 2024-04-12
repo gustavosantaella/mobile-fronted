@@ -21,12 +21,9 @@ import java.util.concurrent.TimeUnit
 
 class MainActivity : ComponentActivity() {
 
-    companion object {
-        lateinit var database: Database
-    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Room.databaseBuilder(this.applicationContext, Database::class.java, "wafi").build();
         setContent {
 
             WafiTheme {

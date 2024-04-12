@@ -1,11 +1,18 @@
 package com.softlink.wafi.src.services
 
-import com.softlink.wafi.MainActivity
+import android.content.Context
+import android.util.Log
+import com.softlink.wafi.src.database.Database
 
-class WalletService {
+class WalletService(private val context: Context) {
 
-
-    fun allWallets(){
+     fun  allWallets(){
+        try{
+            val wallets = Database.getInstance(context).walletDao().getAll()
+            Log.i("WALLETS", wallets.count().toString())
+        }catch(e: Exception){
+            Log.i("Database", e.message.toString())
+        }
     }
 
 
