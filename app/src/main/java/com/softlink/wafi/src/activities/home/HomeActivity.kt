@@ -54,7 +54,6 @@ class HomeActivity: ComponentActivity() {
         super.onCreate(savedInstanceState)
         val service = WalletService(applicationContext)
         val wallets = service.allWallets()
-        val scroll = ScrollState(1)
         setContent() {
             WafiTheme(mainBlueColor = true) {
                 // A surface container using the 'background' color from the theme

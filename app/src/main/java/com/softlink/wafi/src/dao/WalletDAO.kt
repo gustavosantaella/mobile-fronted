@@ -8,5 +8,5 @@ import com.softlink.wafi.src.models.Wallet
 interface WalletDAO {
 
     @Query("SELECT * FROM wallets")
-    fun getAll(): List<Wallet>;
+    fun getAll(): Array<Wallet>;
 }
